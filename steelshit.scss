@@ -1,0 +1,111 @@
+// Steelshit by TeamDino
+// Global class css and foundation with sass
+
+// Table of Contents
+// Steelshit
+
+// 1. Margin
+// 2. Padding
+// 3. Width
+// 4. Position
+// 5. Typography
+// 6. Other
+
+/*------------------------------------*\
+    1. MARGIN
+\*------------------------------------*/
+
+$max-margin-px: 40; // in px
+$separator-margin: 5;
+$max-margin: $max-margin-px / $separator-margin;
+
+
+@for $i from 1 through $max-margin {
+  .mt#{ $i * $separator-margin } { margin-top: $separator-margin * $i * 1px !important; }
+  .mb#{ $i * $separator-margin } { margin-bottom: $separator-margin * $i * 1px !important; }
+  .ml#{ $i * $separator-margin } { margin-left: $separator-margin * $i * 1px !important; }
+  .mr#{ $i * $separator-margin } { margin-right: $separator-margin * $i * 1px !important; }
+}
+
+/*------------------------------------*\
+    2. PADDING
+\*------------------------------------*/
+
+$max-padding-px: 40; // in px
+$separator-padding: 5;
+$max-padding: $max-padding-px / $separator-padding;
+
+@for $i from 1 through $max-padding {
+  .pt#{ $i * $separator-padding } { padding-top: $separator-padding * $i * 1px !important; }
+  .pb#{ $i * $separator-padding } { padding-bottom: $separator-padding * $i * 1px !important; }
+  .pl#{ $i * $separator-padding } { padding-left: $separator-padding * $i * 1px !important; }
+  .pr#{ $i * $separator-padding } { padding-right: $separator-padding * $i * 1px !important; }
+  .p#{ $i * $separator-padding } { padding: $separator-padding * $i * 1px !important; }
+}
+
+/*------------------------------------*\
+    3. WIDTH
+\*------------------------------------*/
+
+@for $i from 1 through 10 {
+  .w#{ $i * 10 } {width: $i * 10%; }
+}
+
+.w33 { width: 33.3333%; }
+.w66 { width: 66.6666%; }
+
+/*------------------------------------*\
+    4. POSITION
+\*------------------------------------*/
+
+.center { margin: 0 auto; }
+.clear { clear: both; }
+
+.ofhidden { overflow:hidden; }
+.ofauto { overflow:auto; }
+
+.relative { position: relative; }
+.absolute { position: absolute; }
+
+.vamiddle { vertical-align: middle; }
+.vatop { vertical-align: top; }
+.vabottom { vertical-align: bottom; }
+
+.dblock { display: block; }
+.diblock { display: inline-block; }
+.dinline { display: inline; }
+.dnone { display: none; }
+
+/*------------------------------------*\
+    5. TYPOGRAPHY
+\*------------------------------------*/
+
+@for $i from 10 through 20 {
+  .fs#{ $i } { font-size: 1px * $i; }
+}
+
+@for $i from 11 through 20 {
+  .fs#{ $i * 2 } { font-size: 2px * $i; }
+}
+
+.txtleft { text-align: left; }
+.txtright { text-align: right; }
+.txtcenter { text-align: center; }
+.txtjustify { text-align: justify; }
+
+.txtbold { font-weight: bold; }
+.txtitalic { font-style: italic; }
+.txtunderline { text-decoration: underline; }
+.txtnone { text-decoration: none; }
+.txtuppercase { text-transform: uppercase; }
+
+.txtellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.lh1 { line-height: 1; }
+.lh12 { line-height: 1.2; }
+.lh14 { line-height: 1.4; }
+
