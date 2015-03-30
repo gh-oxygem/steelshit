@@ -1,0 +1,11 @@
+{
+  "name": "steelshit",
+  "version": "0.0.1",
+  "authors": [
+    "OXYGEM IT"
+  ],
+  "main": " steelshit.scss",
+  "license": "MIT",
+  "private": true,
+  "ignore": []
+}
